@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eff6ff;
+    margin: 100px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(20, 139, 250, 0.226);
+    padding: 20px;
+}
+
+button {
+    background: #5eb6ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #339dff;
+}
+
+button:disabled {
+    background: #b0b8c1;
+    color: #fff;
+    cursor: not-allowed;
+}

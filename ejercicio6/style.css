@@ -1,0 +1,71 @@
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 24px 32px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input, select {
+    padding: 8px 10px;
+    border: 1px solid #b0b8c1;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #5eb6ff;
+}
+
+button[type="submit"] {
+    background: #5eb6ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #339dff;
+}
+
+button[type="submit"]:disabled {
+    background: #b0b8c1;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+p {
+    max-width: 400px;
+    margin: 24px auto 0 auto;
+    padding: 16px 24px;
+    background: #eaf6ff;
+    border-left: 4px solid #5eb6ff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+.bajo {
+    color: yellow;
+    background-color: #91c6f8;
+}
+.normal {
+    color: green;
+}
+.sobrepeso {
+    color: orange;
+}
+.obesidad {
+    color: red;
+}
+

@@ -30,7 +30,9 @@ input {
 input:focus, select:focus {
     border-color: #5eb6ff;
 }
-
+label{
+    font: 1em sans-serif;
+}
 button[type="submit"] {
     background: #5eb6ff;
     color: #fff;

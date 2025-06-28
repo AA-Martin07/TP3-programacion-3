@@ -14,12 +14,14 @@ function CalcularImc() {
     return (
         <>
             <form onSubmit={handleSubmit}>
+                <label>Peso</label>
                 <input
                     type="number"
                     value={peso}
                     onChange={(e) => setPeso(e.target.value)}
                     placeholder="Escriba su peso en (kg) ej. 70"
                 ></input>
+                <label>Altura</label>
                 <input
                     type="number"
                     value={altura}

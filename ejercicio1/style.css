@@ -19,6 +19,10 @@ input, select {
     transition: border 0.2s;
 }
 
+label{
+    font: 1em sans-serif;
+}
+
 input:focus, select:focus {
     border-color: #5eb6ff;
 }

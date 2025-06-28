@@ -7,7 +7,8 @@ const num2input = formulario.elements.num2
 
 function controlarBoton() {
     const operacionSeleccionada = operacion.value;
-    if (operacionSeleccionada === 'division') {
+    const num2 = num2input.value
+    if (operacionSeleccionada === 'division' && (num2 === "" || num2 == 0)) {
         boton.disabled = true;
     }else {
         boton.disabled = false;
@@ -15,6 +16,7 @@ function controlarBoton() {
 }
 
 operacion.addEventListener('change', controlarBoton)
+num2input.addEventListener('input', controlarBoton)
 formulario.addEventListener('submit',(e)=>{
     e.preventDefault()
 
@@ -33,6 +35,10 @@ formulario.addEventListener('submit',(e)=>{
 
         case 'multiplicacion':
             op =num1 * num2
+            break;
+
+        case 'division':
+            op =num1 / num2
             break;
     }
 

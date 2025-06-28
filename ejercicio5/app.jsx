@@ -23,22 +23,25 @@ function Calculadora() {
             case 'multiplicacion':
                 op = num1 * num2;
                 break;
+            case 'division':
+                op = num1 / num2;
+                break;
         }
         setResultado(`El resultado es: ${op} (${operacion})`);
     }
     return (
         <>
             <form onSubmit={handleSubmit}>
+                <label>Ingrese primer numero</label>
                 <input
                     type="number"
-                    disabled={operacion === 'division'}
                     value={numero1}
                     onChange={(e) => setNumero1(e.target.value)}
                     placeholder="Escribe un numero"
                 ></input>
+                <label>Ingrese segundo numero</label>
                 <input
                     type="number"
-                    disabled={operacion === 'division'}
                     value={numero2}
                     onChange={(e) => setNumero2(e.target.value)}
                     placeholder="Escribe un numero"
@@ -52,7 +55,7 @@ function Calculadora() {
                 <button
                     type="submit"
 
-                    disabled={operacion === 'division' || !numero1 || !numero2}
+                    disabled={numero2 == 0 || numero2 === ""}
                 >
                     Calcular
                 </button>
